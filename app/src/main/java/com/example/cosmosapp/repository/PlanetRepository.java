@@ -29,7 +29,42 @@ public class PlanetRepository {
                 "Um dia em Vênus dura 243 dias na Terra.\n" +
                 "Um ano em Vênus dura 225 dias na Terra.\n"
                 , R.drawable.venus));
+        this.mList.add(new PlanetEntity(3, "Mercurio", "É o menor planeta do Sistema Solar. \n" +
+                "É um pouco maior que a Lua. \n" +
+                "É o planeta mais perto do Sol, mas não é o mais quente.\n" +
+                "Pode ser visto a olho nu.\n" +
+                "Um dia em Mercúrio dura 59 dias na Terra.\n" +
+                "Um ano em Mercúrio dura 88 dias na Terra.\n" +
+                "O astro recebeu o nome do deus romano Mercúrio, que era encarregado de levar as mensagens de Júpiter.\n" +
+                "O símbolo astronômico de Mercúrio é uma versão estilizada do caduceu de Hermes.\n" +
+                "Mercúrio não tem nenhuma lua."
+                , R.drawable.mercurio));
+        this.mList.add(new PlanetEntity(4, "Venus", "É o planeta mais quente do Sistema Solar.\n" +
+                "Sua atmosfera é bem densa: Ela prende o calor lá dentro e isso faz Vênus ser super quente.\n" +
+                "Vênus gira na direção oposta da Terra e da maioria dos outros planetas.\n" +
+                "Seu tamanho é bem parecido com o da Terra.\n" +
+                "Um dia em Vênus dura 243 dias na Terra.\n" +
+                "Um ano em Vênus dura 225 dias na Terra.\n"
+                , R.drawable.venus));
+        this.mList.add(new PlanetEntity(5, "Mercurio", "É o menor planeta do Sistema Solar. \n" +
+                "É um pouco maior que a Lua. \n" +
+                "É o planeta mais perto do Sol, mas não é o mais quente.\n" +
+                "Pode ser visto a olho nu.\n" +
+                "Um dia em Mercúrio dura 59 dias na Terra.\n" +
+                "Um ano em Mercúrio dura 88 dias na Terra.\n" +
+                "O astro recebeu o nome do deus romano Mercúrio, que era encarregado de levar as mensagens de Júpiter.\n" +
+                "O símbolo astronômico de Mercúrio é uma versão estilizada do caduceu de Hermes.\n" +
+                "Mercúrio não tem nenhuma lua."
+                , R.drawable.mercurio));
+        this.mList.add(new PlanetEntity(6, "Venus", "É o planeta mais quente do Sistema Solar.\n" +
+                "Sua atmosfera é bem densa: Ela prende o calor lá dentro e isso faz Vênus ser super quente.\n" +
+                "Vênus gira na direção oposta da Terra e da maioria dos outros planetas.\n" +
+                "Seu tamanho é bem parecido com o da Terra.\n" +
+                "Um dia em Vênus dura 243 dias na Terra.\n" +
+                "Um ano em Vênus dura 225 dias na Terra.\n"
+                , R.drawable.venus));
     }
+
 
     public PlanetEntity get(int id) {
         return this.mList.get(id);

@@ -19,6 +19,5 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/background_button"
-        android:text="blblbbl"
         />
 </LinearLayout>

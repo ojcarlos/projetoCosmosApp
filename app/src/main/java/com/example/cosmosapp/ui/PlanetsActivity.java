@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cosmosapp.R;
+import com.example.cosmosapp.constants.PlanetsConstants;
 
 public class PlanetsActivity extends AppCompatActivity {
 
@@ -16,9 +17,14 @@ public class PlanetsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.planets);
+
+
         this.mViewHolder.mPlanetName = findViewById(R.id.planet_name);
         this.mViewHolder.mPlanetImg = findViewById(R.id.planet_img);
         this.mViewHolder.mPlanetInformation = findViewById(R.id.planet_information);
+        this.getData();
+
+
     }
 
     private static class ViewHolder{
@@ -26,5 +32,10 @@ public class PlanetsActivity extends AppCompatActivity {
         ImageView mPlanetImg;
         TextView mPlanetInformation;
 
+    }
+
+    private  void getData(){
+        Bundle bundle = getIntent().getExtras();
+        int id = bundle.getInt(PlanetsConstants.PLANET_ID);
     }
 }
