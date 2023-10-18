@@ -10,7 +10,7 @@ public class PlanetRepository {
 
     private List<PlanetEntity> mList;
 
-    public PlanetRepository(){
+    public PlanetRepository() {
         this.mList = new ArrayList<>();
         this.mList.add(new PlanetEntity(1, "Mercurio", "É o menor planeta do Sistema Solar. \n" +
                 "É um pouco maior que a Lua. \n" +
@@ -22,7 +22,7 @@ public class PlanetRepository {
                 "O símbolo astronômico de Mercúrio é uma versão estilizada do caduceu de Hermes.\n" +
                 "Mercúrio não tem nenhuma lua."
                 , R.drawable.mercurio));
-        this.mList.add(new PlanetEntity(2,"Venus", "É o planeta mais quente do Sistema Solar.\n" +
+        this.mList.add(new PlanetEntity(2, "Venus", "É o planeta mais quente do Sistema Solar.\n" +
                 "Sua atmosfera é bem densa: Ela prende o calor lá dentro e isso faz Vênus ser super quente.\n" +
                 "Vênus gira na direção oposta da Terra e da maioria dos outros planetas.\n" +
                 "Seu tamanho é bem parecido com o da Terra.\n" +
@@ -31,7 +31,11 @@ public class PlanetRepository {
                 , R.drawable.venus));
     }
 
-    public List<PlanetEntity> getList(){
+    public PlanetEntity get(int id) {
+        return this.mList.get(id);
+    }
+
+    public List<PlanetEntity> getList() {
         return this.mList;
     }
 }

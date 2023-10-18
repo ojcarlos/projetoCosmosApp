@@ -27,12 +27,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Planet Name"
+        android:text="Bem vindo ao nosso sistema solar!"
         android:textColor="@color/white"
-        android:textSize="32dp"/>
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:padding="32dp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_planets"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
