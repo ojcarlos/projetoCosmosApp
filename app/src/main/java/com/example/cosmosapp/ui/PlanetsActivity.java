@@ -8,7 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cosmosapp.R;
+import com.example.cosmosapp.business.PlanetBusiness;
 import com.example.cosmosapp.constants.PlanetsConstants;
+import com.example.cosmosapp.entities.PlanetEntity;
+
+import java.io.Console;
 
 public class PlanetsActivity extends AppCompatActivity {
 
@@ -37,5 +41,11 @@ public class PlanetsActivity extends AppCompatActivity {
     private  void getData(){
         Bundle bundle = getIntent().getExtras();
         int id = bundle.getInt(PlanetsConstants.PLANET_ID);
+        PlanetEntity planet = new PlanetBusiness().get(id);
+
+        this.mViewHolder.mPlanetName.setText(planet.getName());
+        this.mViewHolder.mPlanetImg.setImageResource(planet.getImg());
+        this.mViewHolder.mPlanetInformation.setText(planet.getInformation());
+
     }
 }

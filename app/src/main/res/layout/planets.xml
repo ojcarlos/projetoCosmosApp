@@ -42,16 +42,18 @@
             android:layout_marginStart="64dp"
             android:layout_marginEnd="64dp"
             app:srcCompat="@drawable/mercurio" />
+
         <TextView
             android:id="@+id/planet_information"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="@color/white"
             android:layout_marginStart="16dp"
-            android:text="lorem ipsunknfkngkfnkfn \n
-ndnkdnkdn \n
-kmlnmlnmnlmlmlm \n"/>
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="lorem ipsunknfkngkfnkfn \n ndnkdnkdn \n kmlnmlnmnlmlmlm \n"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:lineSpacingExtra="8sp"/>
 
     </LinearLayout>
 
