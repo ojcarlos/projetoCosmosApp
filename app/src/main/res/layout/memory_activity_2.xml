@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/espaco_roxos_azuis_astronomia_imagem_de_fundo">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_weight="6"
+        app:srcCompat="@drawable/log_cosmo2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Player 01: 0"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            />
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Player 02: 0"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="20">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal0"
+                app:srcCompat="@drawable/verso" />
+
+            <ImageView
+                android:id="@+id/img01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal01"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal02"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal03"
+                app:srcCompat="@drawable/verso" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal04"
+                app:srcCompat="@drawable/verso" />
+
+            <ImageView
+                android:id="@+id/img05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal05"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img06"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal06"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img07"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal07"
+                app:srcCompat="@drawable/verso" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img08"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal08"
+                app:srcCompat="@drawable/verso" />
+
+            <ImageView
+                android:id="@+id/img09"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal09"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal10"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal11"
+                app:srcCompat="@drawable/verso" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal12"
+                app:srcCompat="@drawable/verso" />
+
+            <ImageView
+                android:id="@+id/img13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal13"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal14"
+                app:srcCompat="@drawable/verso" />
+            <ImageView
+                android:id="@+id/img15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="reveal15"
+                app:srcCompat="@drawable/verso" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CosmosApp"
         tools:targetApi="31">
         <activity
+            android:name=".ui.MemoryActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.PlanetsActivity"
             android:exported="false" />
         <activity
