@@ -27,7 +27,7 @@ public class CardRepository {
         this.mList.add(new CardEntity(12, R.drawable.urano,6));
         this.mList.add(new CardEntity(13, R.drawable.uranom,6));
         this.mList.add(new CardEntity(14, R.drawable.netuno,7));
-        this.mList.add(new CardEntity(14, R.drawable.netunom,7));
+        this.mList.add(new CardEntity(15, R.drawable.netunom,7));
     }
 
     public List<CardEntity> getmList() {

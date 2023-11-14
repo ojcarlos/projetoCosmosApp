@@ -15,9 +15,5 @@ public class CardBusiness {
         return mlist;
     }
 
-    public boolean isEqual(CardEntity c1, CardEntity c2){
 
-        return c1.equals(c2);
-
-    }
 }
