@@ -233,6 +233,15 @@ public class MemoryActivity2 extends AppCompatActivity {
             mViewHolder.mPlanetImg15.setImageResource(R.drawable.verso);
         }
 
+        if (gameBusiness.p1IsPlaying()){
+            mViewHolder.p1.setBackground(null);
+            this.mViewHolder.p2.setBackground(getDrawable(R.drawable.background_button));
+        }
+        else {
+            mViewHolder.p2.setBackground(null);
+            this.mViewHolder.p1.setBackground(getDrawable(R.drawable.background_button));
+        }
+        gameBusiness.changePlayer();
         card01 = null;
         card02 = null;
 
@@ -261,6 +270,13 @@ public class MemoryActivity2 extends AppCompatActivity {
                     isTheSameCard.create().show();
                     gameBusiness.cardsRevealed(card01);
                     gameBusiness.cardsRevealed(card02);
+                    int i = gameBusiness.addPoint();
+                    if(gameBusiness.p1IsPlaying()){
+                        mViewHolder.p1.setText("Player 01:  " + Integer.toString(i));
+                    }
+                    else {
+                        mViewHolder.p2.setText("Player 02:  " + Integer.toString(i));
+                    }
                     card01 = null;
                     card02 = null;
                 }
